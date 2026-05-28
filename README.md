@@ -37,9 +37,13 @@ ssh -i key.pem ec2-user@PUBLIC_IP
 # Install Docker
 
 sudo yum update -y
+
 sudo yum install docker -y
+
 sudo systemctl start docker
+
 sudo systemctl enable docker
+
 sudo usermod -aG docker ubuntu
 
 # Run Ollama Docker Container
