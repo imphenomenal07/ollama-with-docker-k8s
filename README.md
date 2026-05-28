@@ -49,6 +49,7 @@ sudo usermod -aG docker ubuntu
 # Run Ollama Docker Container
 
 mkdir ollama-data
+
 docker run -d -p 11434:11434 -e OLLAMA_HOST=0.0.0.0 -v ~/ollama-data:/root/.ollama --name ollama ollama/ollama
 
 # Download 3B Model
