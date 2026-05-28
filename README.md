@@ -4,23 +4,7 @@ Deploying OLLAMA 3.2 - 3B model on AWS along with creating Docker Container with
 
 # Architecture
 
-Users
-
- |
-
-Public IP / DNS
-
- |
-
-Python API (FastAPI)
-
- |
-
-Ollama Docker Container
-
- |
-
-EC2 Instance
+Users ➡️ Public IP / DNS ➡️ Python API (FastAPI) ➡️ Ollama Docker Container ➡️ EC2 Instance
 
 # Recommended AWS Configuration
 
