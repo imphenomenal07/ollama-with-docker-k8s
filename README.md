@@ -25,9 +25,11 @@ Size: 75 GB
 
 Allow inbound ports:
 
-22 -> SSH
-80 -> Web frontend
-11434 -> Ollama API
+22 ➡️ SSH
+
+80 ➡️ Web frontend
+
+11434 ➡️ Ollama API
 
 Source: 0.0.0.0/0 (testing only)
 
