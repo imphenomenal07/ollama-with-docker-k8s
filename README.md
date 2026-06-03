@@ -61,6 +61,9 @@ docker exec -it ollama ollama pull llama3:3b
 # Test Ollama API
 
 curl http://localhost:11434/api/generate -d '{
+
 "model": "llama3:3b",
+
 "prompt": "Explain DevOps"
+
 }'
