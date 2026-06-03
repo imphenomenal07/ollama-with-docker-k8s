@@ -57,3 +57,10 @@ docker run -d -p 11434:11434 -e OLLAMA_HOST=0.0.0.0 -v ~/ollama-data:/root/.olla
 # Download 3B Model
 
 docker exec -it ollama ollama pull llama3:3b
+
+# Test Ollama API
+
+curl http://localhost:11434/api/generate -d '{
+"model": "llama3:3b",
+"prompt": "Explain DevOps"
+}'
