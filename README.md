@@ -25,11 +25,11 @@ Size: 75 GB
 
 Allow inbound ports:
 
-22 ➡️ SSH
+SSH ➡️ 22
 
-80 ➡️ Web frontend
+Eeb frontend ➡️ 80
 
-11434 ➡️ Ollama API
+Ollama API ➡️ 11434
 
 Source: 0.0.0.0/0 (testing only)
 
