@@ -93,3 +93,11 @@ def ask(prompt: str):
 
     response = requests.post(OLLAMA_URL, json=payload)
     return response.json()
+
+#Run Python Server
+
+uvicorn app:app --host 0.0.0.0 --port 80
+
+Example test:
+
+http://PUBLIC_IP/ask?prompt=What%20is%20DevOps
