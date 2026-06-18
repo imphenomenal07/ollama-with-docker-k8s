@@ -94,7 +94,7 @@ def ask(prompt: str):
     response = requests.post(OLLAMA_URL, json=payload)
     return response.json()
 
-#Run Python Server
+# Run Python Server
 
 uvicorn app:app --host 0.0.0.0 --port 80
 
