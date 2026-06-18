@@ -69,7 +69,7 @@ curl http://localhost:11434/api/generate -d '{
 }'
 
 # Python Frontend API (FastAPI)
-https://github.com/imphenomenal07/ollama-with-docker-k8s/tree/5d55500e6b246425bf27eb452dd99e59e1f976e3/Python%20Frontned%20API%20(FastAPI)
+https://github.com/imphenomenal07/ollama-with-docker-k8s/blob/5d55500e6b246425bf27eb452dd99e59e1f976e3/Python%20Frontned%20API%20(FastAPI)/app.py
 
 # Run Python Server
 
