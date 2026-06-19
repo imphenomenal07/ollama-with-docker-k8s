@@ -79,8 +79,10 @@ Example test:
 
 http://PUBLIC_IP/ask?prompt=What%20is%20DevOps
 
-Future Scaling
+# Future Scaling
+
 If traffic increases:
+
 Load Balancer
 +
 Multiple EC2 instances
