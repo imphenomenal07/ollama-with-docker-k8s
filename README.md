@@ -84,11 +84,7 @@ http://PUBLIC_IP/ask?prompt=What%20is%20DevOps
 If traffic increases:
 
 Load Balancer
-
 +
-
 Multiple EC2 instances
-
 +
-
 Docker containers
