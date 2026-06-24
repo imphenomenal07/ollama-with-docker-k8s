@@ -1,0 +1,40 @@
+First install:
+
+* NVIDIA drivers on EC2
+* NVIDIA Container Toolkit
+* NVIDIA Device Plugin for Kubernetes
+
+GPU support is officially supported through NVIDIA container runtime. ([Ollama Documentation][3])
+
+Then:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ollama
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ollama
+  template:
+    metadata:
+      labels:
+        app: ollama
+    spec:
+      containers:
+      - name: ollama
+        image: ollama/ollama:latest
+        ports:
+        - containerPort: 11434
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        volumeMounts:
+        - mountPath: /root/.ollama
+          name: ollama-storage
+      volumes:
+      - name: ollama-storage
+        persistentVolumeClaim:
+          claimName: ollama-pvc
