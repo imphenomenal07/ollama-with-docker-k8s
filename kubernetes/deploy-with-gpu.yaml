@@ -1,14 +1,12 @@
-First install:
+# First install:
 
-* NVIDIA drivers on EC2
-* NVIDIA Container Toolkit
-* NVIDIA Device Plugin for Kubernetes
+# NVIDIA drivers on EC2
+# NVIDIA Container Toolkit
+# NVIDIA Device Plugin for Kubernetes
 
-GPU support is officially supported through NVIDIA container runtime. ([Ollama Documentation][3])
+# GPU support is officially supported through NVIDIA container runtime. ([Ollama Documentation][3])
 
-Then:
 
-```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
